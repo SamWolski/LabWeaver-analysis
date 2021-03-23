@@ -77,7 +77,7 @@ class RecordsDB:
 		`target_values` which is an ordered tuple of the `INDEX_KEYS` values.
 		"""
 		## Construct query string from index keys
-		query_string = "DELETE * FROM records WHERE "+" AND ".join(["({} = ?)".format(param) for param in INDEX_KEYS])
+		query_string = "DELETE FROM records WHERE "+" AND ".join(["({} = ?)".format(param) for param in INDEX_KEYS])
 		## Carry out deletion
 		with self.db:
 			self.db.execute(query_string, target_values)
