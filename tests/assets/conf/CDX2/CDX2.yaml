@@ -1,0 +1,4 @@
+env: CDX2
+return_data: True
+numeric_param: 23.4e+6
+numeric_expression: 2*pi*23e6

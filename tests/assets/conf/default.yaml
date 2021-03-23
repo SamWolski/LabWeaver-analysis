@@ -1,0 +1,3 @@
+env: default
+save_figures: False
+show_figures: True
